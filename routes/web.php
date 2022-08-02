@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function (){
-    return view('home');
+    return view('welcome');
+});
+
+Route::get('test',function (){
+    return view('home1');
 });
 
 Route::get('list', [ProductController::class, 'index']);
@@ -28,6 +32,10 @@ Route::get('edit/{id}', [ProductController::class, 'edit']);
 
 Route::post('update', [ProductController::class, 'update']);
 Route::get('delete/{id}', [ProductController::class, 'delete']);
+
+Route::post('logout', function(){
+    Auth::logout();
+ });
 
 
 

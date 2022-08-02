@@ -25,21 +25,19 @@
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
-                    <div class="pt-4 pb-1 border-t border-gray-200">
-                        <div class="px-4">
-                            <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
-                            <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
-                        </div>
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
-                        @csrf
+                    <x-slot name="header">
+                        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                            {{ __('Dashboard') }}
+                        </h2>
+                    </x-slot>
+                        {{-- <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>--}}
+        
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
-        
-                            <x-responsive-nav-link :href="route('logout')"
-                                    onclick="event.preventDefault();
-                                                this.closest('form').submit();">
+            
+                            <button type="submit" class="underline text-sm text-gray-600 hover:text-gray-900">
                                 {{ __('Log Out') }}
-                            </x-responsive-nav-link>
+                            </button>
                         </form>
                     @else
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
