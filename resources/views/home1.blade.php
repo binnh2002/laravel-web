@@ -11,13 +11,14 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{ asset('css/all.min.css')}}" type="text/css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="{{asset('css/ionicons.min.css')}}" type="text/css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   <!-- Tempusdominus Bootstrap 4 -->
   <link rel="stylesheet" href="{{asset('css/tempusdominus-bootstrap-4.min.css')}}">
   <!-- iCheck -->
- {{-- <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="{{asset('css/icheck-bootstrap.min.css')}}">
   <!-- JQVMap -->
-  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css"> --}}
+  {{--<link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">--}}
   <!-- Theme style -->
   <link rel="stylesheet" href="{{asset('css/adminlte.min.css')}}" type="text/css">
   <!-- overlayScrollbars -->
@@ -684,7 +685,7 @@
 <!-- overlayScrollbars -->
 {{--<script src="{{asset('js/jquery.overlayScrollbars.min.js')}}"></script>--}}
 <!-- AdminLTE App -->
-<script src="{{asset('js/adminlte.js')}}"></script>
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
