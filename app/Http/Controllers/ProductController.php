@@ -4,56 +4,72 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
-    public function index(){
-        $data = Product::get();
-        return view('list', compact('data'));
+    public function index()
+    {
+        $data = Product::paginate(15);
+        return view('list', [
+            'data' => $data,
+            'data' => DB::table('products')->paginate(15)
+        ]);
     }
 
-    public function add(){
-        
+    public function add()
+    {
+
         return view('add');
     }
 
-    public function save(Request $request){
+    public function save(Request $request)
+    {
 
         $product = new Product();
         $product->productID = $request->id;
-        $product->productName = $request->name;
-        $product->productPrice = $request->price;
-        $product->productPrice = $request->price;
-        $product->productDetails = $request->details;
-        $product->productImage1 = $request->image1;
-        $product->producerID = $request->producer;
-        $product->save();
+        $id = $request->id;
+        $check = Product::where('productID', '=', $id)->first();
 
-        return redirect()->back()->with('success', 'Product added successfully'); 
+        if ($check) {
+            return redirect()->back()->with('failed', 'Product already exists');
+        } else {
+            $product->productName = $request->name;
+            $product->productPrice = $request->price;
+            $product->productPrice = $request->price;
+            $product->productDetails = $request->details;
+            $product->productImage1 = $request->image1;
+            $product->producerID = $request->producer;
+            $product->save();
+
+            return redirect()->back()->with('success', 'Product added successfully');
+        }
     }
 
-    public function edit($id){
-        $data = Product::where('productID', '=' ,$id)->first();
+    public function edit($id)
+    {
+        $data = Product::where('productID', '=', $id)->first();
         return view('edit', compact('data'));
     }
 
-    public function update(Request $request){
-        
+    public function update(Request $request)
+    {
+
         $id = $request->id;
         Product::where('productID', '=', $id)->update([
             'productName' => $request->name,
             'productPrice' => $request->price,
             'productDetails' => $request->details,
-            'productImage1' =>$request->image1,
-            'producerID' =>$request->producer,
+            'productImage1' => $request->image1,
+            'producerID' => $request->producer,
         ]);
         return redirect()->back()->with('success', 'Product updated successfully');
     }
 
-    public function delete($id){
-        
+    public function delete($id)
+    {
+
         Product::where('productID', '=', $id)->delete();
         return redirect()->back()->with('success', 'Product deleted successfully');
-
     }
 }

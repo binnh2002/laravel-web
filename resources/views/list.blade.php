@@ -1,3 +1,5 @@
+@extends('home1')
+@section('content')
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,11 +24,11 @@
                         {{ Session::get('success') }}   
                     </div> 
                     @endif
-                <div style="margin-right: 10%; float: right;">
+                <div style="float: right;">
                     <a href="{{ url('add')}}" class="btn btn-outline-success">Add new</a>
                 </div>
-                    <table class="table table-hover">
-                    <thead>
+                <table class="table table-striped">
+                    <thead class='thead-dark'>
                         <tr>
                             <th>ID</th>
                             <th>Product</th>
@@ -41,7 +43,7 @@
                                 <td> {{$row->productID}} </td>
                                 <td> {{$row->productName}} </td>
                                 <td> {{$row->productPrice}} </td>
-                                <td> {{$row->productImage1}} </td>
+                                <td> <img src="{{asset('img/' . $row->productImage1)}}" style="height: 50px; width: 50px;"> </td>
                                 <td>
                                     <a href="{{url('edit/' . $row->productID)}}" class="btn btn-primary">Edit</a>
                                     <a href="{{url('delete/' . $row->productID)}}" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this')">Delete</a>
@@ -50,8 +52,14 @@
                         @endforeach
                     </tbody>
                 </table>
+                <nav>
+                    <ul class="pagination">
+                     {{ $data->links() }}
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
   </body>
 </html>
+@endsection

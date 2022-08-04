@@ -1,3 +1,5 @@
+@extends('home1')
+@section('content')
 <!doctype html>
 <html lang="en">
   <head>
@@ -54,3 +56,4 @@
             </div>
         </div>
   </body>
+@endsection
