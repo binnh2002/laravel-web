@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class AdminMidlldeware
+class AdminMiddleware
 {
     /**
      * Handle an incoming request.
@@ -18,23 +18,16 @@ class AdminMidlldeware
     public function handle(Request $request, Closure $next)
     {
 
-        if(Auth::check())
-        {
-           if(Auth::user()->role_as == 1) // 1 = administrator
-           {
+        if (Auth::check()) {
+            if (Auth::user()->role_as == 1) // 1 = administrator
+            {
                 return $next($request);
-           }
-           else
-           {
-                return redirect('/')->with('status','You are not administrator');
-           }
+            } else {
+                return redirect('/')->with('status', 'You are not administrator');
+            }
+        } else {
+
+            return redirect('/login')->with('status', 'Please login first');
         }
-        else
-        {
-
-                return redirect('/login')->with('status','Please login first');
-
-        }
-
     }
 }
