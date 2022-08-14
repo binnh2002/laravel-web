@@ -42,6 +42,16 @@
                             <input type="text" name="name" class="form-control" placeholder="Enter product name">
                         </div>
                         <div class="md-3">
+                            <label for='cat' class='form-label'>Categories</label>
+                            <select name="cat" class="form-control">
+                                <option value="1">Asus</option>
+                                <option value="1">Asus</option>
+                                <option value="1">Asus</option>
+                                <option value="1">Asus</option>
+                            </select>
+
+                        </div>
+                        <div class="md-3">
                             <label for='price' class='form-label'>Price</label>
                             <input type="text" name="price" class="form-control" placeholder="Enter product price">
                         </div>

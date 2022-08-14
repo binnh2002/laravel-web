@@ -14,13 +14,11 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function (){
+Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('test',function (){
-    return view('home1');
-});
+
 
 Route::get('list', [ProductController::class, 'index']);
 
@@ -33,16 +31,23 @@ Route::get('edit/{id}', [ProductController::class, 'edit']);
 Route::post('update', [ProductController::class, 'update']);
 Route::get('delete/{id}', [ProductController::class, 'delete']);
 
-Route::post('logout', function(){
+Route::get('home2', function () {
+    return view('home2');
+});
+
+Route::post('logout', function () {
     Auth::logout();
- });
+});
 
 
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
 
-Route::middleware(['auth','isAdmin'])->group(function(){
+Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return view('home1');
     })->middleware(['auth'])->name('dashboard');
+    Route::get('test', function () {
+        return view('home1');
+    });
 });

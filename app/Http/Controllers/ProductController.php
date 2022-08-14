@@ -27,19 +27,20 @@ class ProductController extends Controller
     {
 
         $product = new Product();
-        $product->productID = $request->id;
+        $product->product_id = $request->id;
         $id = $request->id;
-        $check = Product::where('productID', '=', $id)->first();
+        $check = Product::where('product_id', '=', $id)->first();
 
         if ($check) {
             return redirect()->back()->with('failed', 'Product already exists');
         } else {
-            $product->productName = $request->name;
-            $product->productPrice = $request->price;
-            $product->productPrice = $request->price;
-            $product->productDetails = $request->details;
-            $product->productImage1 = $request->image1;
-            $product->producerID = $request->producer;
+            $product->product_title = $request->name;
+            $product->product_cat = $request->cat;
+            $product->product_price = $request->price;
+            $product->product_desc = $request->details;
+            $product->product_image = $request->image;
+            $product->product_keyword = $request->keyword;
+            $product->producer_id = $request->producer;
             $product->save();
 
             return redirect()->back()->with('success', 'Product added successfully');
@@ -48,7 +49,7 @@ class ProductController extends Controller
 
     public function edit($id)
     {
-        $data = Product::where('productID', '=', $id)->first();
+        $data = Product::where('product_id', '=', $id)->first();
         return view('edit', compact('data'));
     }
 
@@ -56,7 +57,7 @@ class ProductController extends Controller
     {
 
         $id = $request->id;
-        Product::where('productID', '=', $id)->update([
+        Product::where('product_id', '=', $id)->update([
             'productName' => $request->name,
             'productPrice' => $request->price,
             'productDetails' => $request->details,
@@ -69,7 +70,7 @@ class ProductController extends Controller
     public function delete($id)
     {
 
-        Product::where('productID', '=', $id)->delete();
+        Product::where('product_id', '=', $id)->delete();
         return redirect()->back()->with('success', 'Product deleted successfully');
     }
 }

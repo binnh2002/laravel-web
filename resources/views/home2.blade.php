@@ -8,7 +8,7 @@
     <title>Laptop Shop</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ asset('css/home1/style.css') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <!-- fontawesom cdn link -->
@@ -60,9 +60,11 @@
                 </div>
             </div>
             <div class="col-md-3 mt-2" id="icons">
-                <div style="cursor: pointer;" class="circle float-right" data-toggle="modal" data-target="#loginModal"
-                    data-toggle="tooltip" data-placement="top" title="LOGIN & SIGNUP"><i
-                        class="fas fa-user text-primary"></i></div>
+                <a href="{{ url('login') }}">
+                    <div style="cursor: pointer;" class="circle float-right" data-toggle="modal"
+                        data-target="#loginModal" data-toggle="tooltip" data-placement="top" title="LOGIN & SIGNUP"><i
+                            class="fas fa-user text-primary"></i></div>
+                </a>
 
                 <a href="cart.html">
                     <div class="circle float-right mr-2"><i class="fas fa-shopping-cart text-primary"></i><sup><span
@@ -90,7 +92,7 @@
                         </div>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#"> MSI Laptop <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="msi.html"> MSI Laptop <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#"> HP Laptop </a>
@@ -144,35 +146,6 @@
     </div>
 
 
-    <div class="container">
-        <div class="row mt-4" id="border-line">
-            <div class="col-md-4">
-                <div class="box">
-                    <i class="fas fa-truck fa-2x mb-3 mt-4 text-primary"></i>
-                    <h5>Fast delivery</h5>
-                    <p>123456</p>
-                </div>
-
-            </div>
-
-            <div class="col-md-4">
-                <div class="box">
-                    <i class="fas fa-truck fa-2x mb-3 mt-4 text-primary"></i>
-                    <h5>Fast delivery</h5>
-                    <p>56756666666</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="box">
-                    <i class="fas fa-truck fa-2x mb-3 mt-4 text-primary"></i>
-                    <h5>Fast delivery</h5>
-                    <p>ABCXYZ</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <br> <br>
 
     <div class="container cardItem" id="products">
@@ -180,85 +153,60 @@
         <br>
         <div class="row">
             <div class="col-md-3">
-                <div class="card">
-                    <img class="card-img-top img-fluid"
-                        src="https://th.bing.com/th/id/OIP.GYCJmpErSScVE7MFiesXCAHaE8?pid=ImgDet&rs=1"
-                        alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text"><a href="inner-productpage.html" class="text-dark">Just another item
-                                name</a></p>
-
-                        <div class="ratings">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-secondary"></i>
-                            <label class="text-secondary ml-3">34 reviews</label>
+                <a href="inner-productpage.html" class="text-dark">
+                    <div class="card">
+                        <img class="card-img-top img-fluid"
+                            src="https://lh3.googleusercontent.com/LARe4PhjNSgJMEqTDOKDIOLdu4E_ACQmeiHlQ3AW-dmzY6XL69ODSIzMacRqp9x703x4tAPJA1SlSMWN2KcwvRP6bZRgpQyS=w500-rw"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text"><a href="inner-productpage.html" class="text-dark">Laptop MSI Katana
+                                    GF76 11UC 096VN </a></p>
+                            <p class="card-cost">$1500</p>
                         </div>
-                        <p class="card-cost">$179.00</p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-3">
-                <div class="card">
-                    <img class="card-img-top img-fluid"
-                        src="https://th.bing.com/th/id/R.0bcbfd4e61eeebc0fc19f5f6125b3fbf?rik=V1z552w%2fFJ5rjw&pid=ImgRaw&r=0"
-                        alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text"><a href="inner-productpage.html" class="text-dark">Some item name
-                                here</a></p>
-                        <div class="ratings">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-secondary"></i>
-                            <label class="text-secondary ml-3">34 reviews</label>
+                <a href="inner-productpage.html" class="text-dark">
+                    <div class="card">
+                        <img class="card-img-top img-fluid"
+                            src="https://lh3.googleusercontent.com/expSJkTXwT0KcVGoDaLkak9WwoFwX-APF1EzCCNQApI1Rz5rsotXwenJUifzNl0mPhrxAeFLtx5Jg811naUeIULEEXZiqJ9r=w500-rw"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text"><a href="inner-productpage.html" class="text-dark">Laptop ASUS ROG
+                                    Zephyrus G14 GA401QE-K2097T </a></p>
+                            <p class="card-cost">$1500</p>
                         </div>
-                        <p class="card-cost">$280.00</p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-3">
-                <div class="card">
-                    <img class="card-img-top img-fluid"
-                        src="https://thewiredshopper.com/wp-content/uploads/2022/08/Gaming-Laptops-with-Best-GPUs.jpg"
-                        alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text"><a href="inner-productpage.html" class="text-dark">Great item name
-                                here</a></p>
-                        <div class="ratings">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-secondary"></i>
-                            <label class="text-secondary ml-3">34 reviews</label>
+                <a href="inner-productpage.html" class="text-dark">
+                    <div class="card">
+                        <img class="card-img-top img-fluid"
+                            src="https://lh3.googleusercontent.com/5TZpvkbYzNhDDDt1CDNkXnnVuQr2-pL6Yamwm24z9Lo10SUxmoZO4xaiDOsVOQug2N1QhN-qcaCn-9qDu95nmcqdmbq7BYM=w500-rw"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text"><a href="inner-productpage.html" class="text-dark">Laptop ASUS
+                                    G513IH-HN015T 90NR07P2-M00390 </a></p>
+                            <p class="card-cost">$1500</p>
                         </div>
-                        <p class="card-cost">$56.00</p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-3">
-                <div class="card">
-                    <img class="card-img-top img-fluid"
-                        src="https://th.bing.com/th/id/R.f0761f2ae48b65c61c2d9eff3358aaa4?rik=pJ4eKWBIUQ0aBg&pid=ImgRaw&r=0"
-                        alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text"><a href="inner-productpage.html" class="text-dark">Just another item
-                                name</a></p>
-                        <div class="ratings">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-secondary"></i>
-                            <label class="text-secondary ml-3">34 reviews</label>
+                <a href="inner-productpage.html" class="text-dark">
+                    <div class="card">
+                        <img class="card-img-top img-fluid"
+                            src="https://lh3.googleusercontent.com/XgCVhlV8lFvGAMHO5bpNc8BsVW8wXQJfOb6x96QKqjqNWoaLWtOhOJ2NTujSYrDT7oo_yHHDZyRuzLC9dKR_xEW_UxnAvO-w=w500-rw"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text"><a href="inner-productpage.html" class="text-dark">Laptop Dell
+                                    Gaming G15 5515 5515-P105F004DGR </a></p>
+                            <p class="card-cost">$1500</p>
                         </div>
-                        <p class="card-cost">$179.00</p>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -270,85 +218,56 @@
         <br>
         <div class="row">
             <div class="col-md-3">
-                <div class="card">
-                    <img class="card-img-top img-fluid"
-                        src="https://techrechard.com/wp-content/uploads/2020/08/Redmi-G-gaming-laptop-introduced-144Hz-display-NVIDIA-GeForce-GTX.png"
-                        alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text"><a href="inner-productpage.html" class="text-dark">Just another item
-                                name</a></p>
-                        <div class="ratings">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-secondary"></i>
-                            <label class="text-secondary ml-3">34 reviews</label>
-                        </div>
-                        <p class="card-cost">$179.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
                 <a href="inner-productpage.html" class="text-dark">
                     <div class="card">
                         <img class="card-img-top img-fluid"
-                            src="https://thegadgetflow.com/wp-content/uploads/2020/06/Razer-Blade-15-Studio-Edition-8-Core-Laptop-07-1200x900.jpg"
+                            src="https://lh3.googleusercontent.com/wQP8wlXt_Sd0UJzgGDj01q7-aqtTFIFph65HwEMDNq2FUmic1Q3dvA12KXL4Jn2HC88VJByKpZMw-Y_tG-IWTkm-30Rqg_Co=w500-rw"
                             alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">some new item here</p>
-                            <div class="ratings">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <label class="text-secondary ml-3">34 reviews</label>
-                            </div>
-                            <p class="card-cost">$280.00</p>
+                            <p class="card-text">Laptop Huawei Matebook D 14 Nbl- WAP9R</p>
+                            <p class="card-cost">$1500</p>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col-md-3">
-                <div class="card">
-                    <img class="card-img-top img-fluid"
-                        src="https://th.bing.com/th/id/R.3decdbdb0b4c76375845885b04ab4b1b?rik=S4k5DcbNjB6Xlg&pid=ImgRaw&r=0"
-                        alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text"><a href="inner-productpage.html" class="text-dark">Great item name
-                                here</a></p>
-                        <div class="ratings">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-secondary"></i>
-                            <label class="text-secondary ml-3">34 reviews</label>
+                <a href="inner-productpage.html" class="text-dark">
+                    <div class="card">
+                        <img class="card-img-top img-fluid"
+                            src="https://lh3.googleusercontent.com/Av5fesJ5QLbNvdND0iiD51vFX6fX3KOQt42aH_Ms-JnO1WIhKvHyRLG15q7MMibDOK8yLpve3EnYNF9QAk_-oubjsDXoy9Uhcw=w500-rw"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Laptop Lenovo Legion S7 15ACH6 82K800DPVN</p>
+                            <p class="card-cost">$1500</p>
                         </div>
-                        <p class="card-cost">$56.00</p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-3">
-                <div class="card">
-                    <img class="card-img-top img-fluid"
-                        src="https://th.bing.com/th/id/R.a2872d19b5c6b92e0b565fbdd02e6e4f?rik=8PyDK0sDZigsmw&pid=ImgRaw&r=0 "
-                        alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text"><a href="inner-productpage.html" class="text-dark">Just another item
-                                name</a></p>
-                        <div class="ratings">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-secondary"></i>
-                            <label class="text-secondary ml-3">34 reviews</label>
+                <a href="inner-productpage.html" class="text-dark">
+                    <div class="card">
+                        <img class="card-img-top img-fluid"
+                            src="https://lh3.googleusercontent.com/K8-muTXgikgPTktDZSNcTziWvLay4e5b5eS_O2ACcNY4REDQTocX1HCbGK56R_sgIFjO2OA97c5T00fYmyfmdGB24g8JREHe4A=w500-rw"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Laptop GIGABYTE G5 KD 52VN123SO</p>
+                            <p class="card-cost">$1500</p>
                         </div>
-                        <p class="card-cost">$179.00</p>
                     </div>
-                </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="inner-productpage.html" class="text-dark">
+                    <div class="card">
+                        <img class="card-img-top img-fluid"
+                            src="https://lh3.googleusercontent.com/ZcU0XZ9h_OI29gScUnZRT08HkLvjLnjXbdT4-wbcZG5neeFXBTjYePIVfDtVLQ1OEujWL5wE2rYGTKNVB1nkT3wSHMq_3KQ=w500-rw"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Laptop Lenovo IdeaPad Gaming 3 15ACH6 </p>
+                            <p class="card-cost">$1500</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -405,43 +324,6 @@
             </span>
         </div>
     </footer>
-
-
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header bg-dark">
-                    <h5 class="modal-title text-light" id="exampleModalCenterTitle">Login</h5>
-                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body bg-light">
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Enter Your Email">
-                            <small id="emailHelp" class="form-text text-danger">We'll never share your email with
-                                anyone else!</small>
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Password">
-                        </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Keep me Logined</label>
-                        </div>
-                        <button type="submit" class="btn btn-secondary btn-sm"><a href="profile.html"
-                                class="text-light">Login</a></button>
-                        <a href="register.html" class="float-right text-muted">Not a Member? Register</a>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
 </body>
 
 
