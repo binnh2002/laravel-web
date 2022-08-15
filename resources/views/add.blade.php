@@ -64,9 +64,18 @@
                             <input type="file" name="image1" class="form-control" placeholder="Enter product image">
                         </div>
                         <div class="md-3">
+                            <label for='keyword' class='form-label'>Key word</label>
+                            <textarea type="text" name="keyword" rows="5" class="form-control" placeholder="Enter product details"></textarea>
+                        </div>
+                        <div class="md-3">
                             <label for='producer' class='form-label'>Producer</label>
-                            <input type="number" name="producer" value="1" class="form-control"
-                                placeholder="Enter product producer">
+                            <select name="producer" class="form-control">
+                                @foreach ($producers as $row)
+                                    <option value="{{ $row->producer_id }}">
+                                        {{ $row->producer_name }}
+                                    </option>
+                                @endforeach
+                            </select>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                         <a href="{{ url('list') }} class="btn btn-success">Back</a>
