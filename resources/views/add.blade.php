@@ -44,10 +44,11 @@
                         <div class="md-3">
                             <label for='cat' class='form-label'>Categories</label>
                             <select name="cat" class="form-control">
-                                <option value="1">Asus</option>
-                                <option value="1">Asus</option>
-                                <option value="1">Asus</option>
-                                <option value="1">Asus</option>
+                                @foreach ($categories as $row)
+                                    <option value="{{ $row->cat_id }}">
+                                        {{ $row->cat_title }}
+                                    </option>
+                                @endforeach
                             </select>
 
                         </div>

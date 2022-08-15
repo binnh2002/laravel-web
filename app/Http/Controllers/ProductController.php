@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Producers;
+use App\Models\Categories;
 use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
@@ -21,7 +22,11 @@ class ProductController extends Controller
     public function add()
     {
         $producers = Producers::get();
-        return view('add');
+        $categories = Categories::get();
+        return view('add', [
+            'producers' => $producers,
+            'categories' => $categories
+        ]);
     }
 
     public function save(Request $request)
@@ -40,7 +45,7 @@ class ProductController extends Controller
             $product->product_price = $request->price;
             $product->product_desc = $request->details;
             $product->product_image = $request->image1;
-            $product->product_keyword = $request->keyword;
+            $product->product_keywords = $request->keyword;
             $product->producer_id = $request->producer;
             $product->save();
 
@@ -51,7 +56,13 @@ class ProductController extends Controller
     public function edit($id)
     {
         $data = Product::where('product_id', '=', $id)->first();
-        return view('edit', compact('data'));
+        $producers = Producers::get();
+        $categories = Categories::get();
+        return view('edit', [
+            'data' => $data,
+            'producers' => $producers,
+            'categories' => $categories
+        ]);
     }
 
     public function update(Request $request)
@@ -64,6 +75,8 @@ class ProductController extends Controller
             'product_desc' => $request->details,
             'product_image' => $request->image1,
             'producer_id' => $request->producer,
+            'product_cat' => $request->cat,
+            'product_keywords' => $request->keyword
         ]);
         return redirect()->back()->with('success', 'Product updated successfully');
     }

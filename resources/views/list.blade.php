@@ -37,10 +37,11 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Name</th>
-                                <th>Product</th>
                                 <th>Producer</th>
+                                <th>Categories</th>
                                 <th>Price</th>
                                 <th>Image</th>
+                                <th>Keywords</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -55,6 +56,7 @@
                                     <td> <img src="{{ asset('img/' . $row->product_image) }}"
                                             style="height: 50px; width: 50px;">
                                     </td>
+                                    <td> {{ $row->product_keywords }} </td>
                                     <td>
                                         <a href="{{ url('edit/' . $row->product_id) }}" class="btn btn-primary">Edit</a>
                                         <a href="{{ url('delete/' . $row->product_id) }}" class="btn btn-danger"
