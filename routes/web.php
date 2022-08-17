@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProducerController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 /*
@@ -16,6 +17,9 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
     return view('welcome');
+});
+Route::get('/index', function () {
+    return view('index');
 });
 
 
@@ -39,6 +43,10 @@ Route::post('logout', function () {
     Auth::logout();
 });
 
+Route::get('/producers', [ProducerController::class, 'getProducers']);
+Route::get('/producers/add', [ProducerController::class, 'add']);
+Route::post('/producers/save', [ProducerController::class, 'save']);
+
 
 
 require __DIR__ . '/auth.php';
@@ -47,7 +55,9 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/dashboard', function () {
         return view('home1');
     })->middleware(['auth'])->name('dashboard');
-    Route::get('test', function () {
-        return view('home1');
-    });
+});
+
+
+Route::get('product/msi', function () {
+    return view('home.listproducts.msi');
 });

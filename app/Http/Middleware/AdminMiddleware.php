@@ -23,7 +23,7 @@ class AdminMiddleware
             {
                 return $next($request);
             } else {
-                return redirect('/')->with('status', 'You are not administrator');
+                return redirect('/index')->with('status', 'You are not administrator');
             }
         } else {
 

@@ -87,4 +87,16 @@ class ProductController extends Controller
         Product::where('product_id', '=', $id)->delete();
         return redirect()->back()->with('success', 'Product deleted successfully');
     }
+
+    public function search(Request $request)
+    {
+        if (isset($_GET['query'])) {
+            $search_text = $_GET['query'];
+            $product_title = DB::table('products')->where('product_name', 'LIKE', '%' . $search_text . '%')->paginate(5);
+
+            return view('list', [
+                'data' => $product_title,
+            ]);
+        }
+    }
 }

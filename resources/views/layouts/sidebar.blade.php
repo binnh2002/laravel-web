@@ -19,11 +19,6 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('test') }}" class="nav-link">
-                                <p>Dashboard</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a href="{{ url('add') }}" class="nav-link">
                                 <p>Insert</p>
                             </a>
@@ -33,6 +28,12 @@
                                 <p>View product</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ url('producers') }}" class="nav-link">
+                                <p>Manage Producers</p>
+                            </a>
+                        </li>
+
                     </ul>
                 </li>
         </nav>
