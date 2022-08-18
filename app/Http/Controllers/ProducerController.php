@@ -42,7 +42,9 @@ class ProducerController extends Controller
             return redirect()->back()->with('success', 'Producer added successfully');
         }
     }
-    public function edit(Request $request)
+    public function edit($id)
     {
+        $data = Product::where('producer_id', '=', $id)->first();
+        return view('editproducer');
     }
 }

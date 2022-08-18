@@ -46,6 +46,7 @@ Route::post('logout', function () {
 Route::get('/producers', [ProducerController::class, 'getProducers']);
 Route::get('/producers/add', [ProducerController::class, 'add']);
 Route::post('/producers/save', [ProducerController::class, 'save']);
+Route::post('/producers/edit/{id}', [ProducerController::class, 'save']);
 
 
 
