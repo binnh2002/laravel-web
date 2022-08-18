@@ -48,6 +48,7 @@ Route::get('/producers/add', [ProducerController::class, 'add']);
 Route::get('/producers/edit/{id}', [ProducerController::class, 'edit']);
 Route::post('/producers/save', [ProducerController::class, 'save']);
 Route::post('/producers/update', [ProducerController::class, 'update']);
+Route::post('/producers/edit/{id}', [ProducerController::class, 'save']);
 
 
 
