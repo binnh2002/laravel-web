@@ -38,7 +38,7 @@
                             <input type="text" name="name" class="form-control" value="{{ $data->producer_name }}">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
-                        <a href="{{ url('list') }}" class="btn btn-success">Back</a>
+                        <a href="{{ url('producers') }}" class="btn btn-success">Back</a>
                     </form>
                 </div>
             </div>
