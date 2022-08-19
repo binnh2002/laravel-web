@@ -29,12 +29,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('producers') }}" class="nav-link">
+                            <a href="{{ url('/users') }}" class="nav-link">
                                 <p>Manage Customer accounts</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('producers') }}" class="nav-link">
+                            <a href="{{ url('admin') }}" class="nav-link">
                                 <p>Manage Administrators</p>
                             </a>
                         </li>

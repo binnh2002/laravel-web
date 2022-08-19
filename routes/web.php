@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProducerController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 /*
@@ -46,9 +47,11 @@ Route::post('/producers/update', [ProducerController::class, 'update']);
 Route::get('/producers/delete/{id}', [ProducerController::class, 'delete']);
 
 
-Route::get('/users', [UserController::class, '']);
+Route::get('/users', [UserController::class, 'customer']);
+Route::get('/users/delete/{id}', [UserController::class, 'delete']);
 
 
+Route::get('/admin', [UserController::class, 'admin']);
 
 require __DIR__ . '/auth.php';
 

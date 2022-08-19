@@ -38,7 +38,6 @@
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Producer</th>
-                                <th>Categories</th>
                                 <th>Price</th>
                                 <th>Image</th>
                                 <th>Keywords</th>
@@ -51,7 +50,6 @@
                                     <td> {{ $row->product_id }} </td>
                                     <td> {{ $row->product_title }} </td>
                                     <td> {{ $row->producer_id }} </td>
-                                    <td> {{ $row->product_cat }} </td>
                                     <td> {{ $row->product_price }} </td>
                                     <td> <img src="{{ asset('img/' . $row->product_image) }}"
                                             style="height: 50px; width: 50px;">
