@@ -19,18 +19,23 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('add') }}" class="nav-link">
-                                <p>Insert</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a href="{{ url('list') }}" class="nav-link">
-                                <p>View product</p>
+                                <p>Manage products</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('producers') }}" class="nav-link">
                                 <p>Manage Producers</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url('producers') }}" class="nav-link">
+                                <p>Manage Customer accounts</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url('producers') }}" class="nav-link">
+                                <p>Manage Administrators</p>
                             </a>
                         </li>
 

@@ -49,6 +49,9 @@ Route::post('/producers/update', [ProducerController::class, 'update']);
 Route::get('/producers/delete/{id}', [ProducerController::class, 'delete']);
 
 
+Route::get('/users', [UserController::class, '']);
+
+
 
 require __DIR__ . '/auth.php';
 
