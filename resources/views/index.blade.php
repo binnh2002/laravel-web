@@ -112,127 +112,14 @@
     <br> <br>
 
     <div class="container cardItem" id="products">
-        <h2>Popular Products</h2>
-        <br>
-        <div class="row">
-            <div class="col-md-3">
-                <a href="inner-productpage.html" class="text-dark">
-                    <div class="card">
-                        <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/LARe4PhjNSgJMEqTDOKDIOLdu4E_ACQmeiHlQ3AW-dmzY6XL69ODSIzMacRqp9x703x4tAPJA1SlSMWN2KcwvRP6bZRgpQyS=w500-rw"
-                            alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"><a href="inner-productpage.html" class="text-dark">Laptop MSI Katana
-                                    GF76 11UC 096VN </a></p>
-                            <p class="card-cost">$1500</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="inner-productpage.html" class="text-dark">
-                    <div class="card">
-                        <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/expSJkTXwT0KcVGoDaLkak9WwoFwX-APF1EzCCNQApI1Rz5rsotXwenJUifzNl0mPhrxAeFLtx5Jg811naUeIULEEXZiqJ9r=w500-rw"
-                            alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"><a href="inner-productpage.html" class="text-dark">Laptop ASUS ROG
-                                    Zephyrus G14 GA401QE-K2097T </a></p>
-                            <p class="card-cost">$1500</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="inner-productpage.html" class="text-dark">
-                    <div class="card">
-                        <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/5TZpvkbYzNhDDDt1CDNkXnnVuQr2-pL6Yamwm24z9Lo10SUxmoZO4xaiDOsVOQug2N1QhN-qcaCn-9qDu95nmcqdmbq7BYM=w500-rw"
-                            alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"><a href="inner-productpage.html" class="text-dark">Laptop ASUS
-                                    G513IH-HN015T 90NR07P2-M00390 </a></p>
-                            <p class="card-cost">$1500</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="inner-productpage.html" class="text-dark">
-                    <div class="card">
-                        <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/XgCVhlV8lFvGAMHO5bpNc8BsVW8wXQJfOb6x96QKqjqNWoaLWtOhOJ2NTujSYrDT7oo_yHHDZyRuzLC9dKR_xEW_UxnAvO-w=w500-rw"
-                            alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"><a href="inner-productpage.html" class="text-dark">Laptop Dell
-                                    Gaming G15 5515 5515-P105F004DGR </a></p>
-                            <p class="card-cost">$1500</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+        @include('home.layouts.popularproduct')
     </div>
 
     <br>
     <br>
+
     <div class="container cardItem" id="newarrive">
-        <h2>New Arrived</h2>
-        <br>
-        <div class="row">
-            <div class="col-md-3">
-                <a href="inner-productpage.html" class="text-dark">
-                    <div class="card">
-                        <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/wQP8wlXt_Sd0UJzgGDj01q7-aqtTFIFph65HwEMDNq2FUmic1Q3dvA12KXL4Jn2HC88VJByKpZMw-Y_tG-IWTkm-30Rqg_Co=w500-rw"
-                            alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Laptop Huawei Matebook D 14 Nbl- WAP9R</p>
-                            <p class="card-cost">$1500</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="inner-productpage.html" class="text-dark">
-                    <div class="card">
-                        <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/Av5fesJ5QLbNvdND0iiD51vFX6fX3KOQt42aH_Ms-JnO1WIhKvHyRLG15q7MMibDOK8yLpve3EnYNF9QAk_-oubjsDXoy9Uhcw=w500-rw"
-                            alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Laptop Lenovo Legion S7 15ACH6 82K800DPVN</p>
-                            <p class="card-cost">$1500</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="inner-productpage.html" class="text-dark">
-                    <div class="card">
-                        <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/K8-muTXgikgPTktDZSNcTziWvLay4e5b5eS_O2ACcNY4REDQTocX1HCbGK56R_sgIFjO2OA97c5T00fYmyfmdGB24g8JREHe4A=w500-rw"
-                            alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Laptop GIGABYTE G5 KD 52VN123SO</p>
-                            <p class="card-cost">$1500</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="inner-productpage.html" class="text-dark">
-                    <div class="card">
-                        <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/ZcU0XZ9h_OI29gScUnZRT08HkLvjLnjXbdT4-wbcZG5neeFXBTjYePIVfDtVLQ1OEujWL5wE2rYGTKNVB1nkT3wSHMq_3KQ=w500-rw"
-                            alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Laptop Lenovo IdeaPad Gaming 3 15ACH6 </p>
-                            <p class="card-cost">$1500</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+        @include('home.layouts.newarrive')
     </div>
 
 

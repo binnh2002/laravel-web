@@ -99,4 +99,12 @@ class ProductController extends Controller
             ]);
         }
     }
+
+    public function loadProduct()
+    {
+        $data = Product::get();
+        return view('index', [
+            'data' => $data
+        ]);
+    }
 }
