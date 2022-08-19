@@ -42,7 +42,26 @@ class ProducerController extends Controller
             return redirect()->back()->with('success', 'Producer added successfully');
         }
     }
-    public function edit(Request $request)
+    public function edit($id)
+    {
+
+        $data = Producers::where('producer_id', '=', $id)->first();
+        return view('editproducer', [
+            'data' => $data,
+        ]);
+    }
+
+    public function update(Request $request)
+    {
+
+        $id = $request->id;
+        Producers::where('producer_id', '=', $id)->update([
+            'producer_name' => $request->name,
+        ]);
+        return redirect()->back()->with('success', 'Producer updated successfully');
+    }
+
+    public function delete($id)
     {
 
         Producers::where('producer_id', '=', $id)->delete();

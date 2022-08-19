@@ -46,8 +46,9 @@
                                     <td> {{ $row->producer_id }} </td>
                                     <td> {{ $row->producer_name }} </td>
                                     <td>
-                                        <a href="{{ url('edit/' . $row->product_id) }}" class="btn btn-primary">Edit</a>
-                                        <a href="{{ url('delete/' . $row->product_id) }}" class="btn btn-danger"
+                                        <a href="{{ url('producers/edit/' . $row->producer_id) }}"
+                                            class="btn btn-primary">Edit</a>
+                                        <a href="{{ url('producers/delete/' . $row->producer_id) }}" class="btn btn-danger"
                                             onclick="return confirm('Are you sure you want to delete this')">Delete</a>
                                     </td>
                                 </tr>
