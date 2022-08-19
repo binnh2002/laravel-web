@@ -37,9 +37,6 @@ Route::get('home2', function () {
     return view('home2');
 });
 
-Route::post('logout', function () {
-    Auth::logout();
-});
 
 Route::get('/producers', [ProducerController::class, 'getProducers']);
 Route::get('/producers/add', [ProducerController::class, 'add']);
