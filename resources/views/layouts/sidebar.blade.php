@@ -19,12 +19,12 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('list') }}" class="nav-link">
+                            <a href="{{ url('/list') }}" class="nav-link">
                                 <p>Manage products</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('producers') }}" class="nav-link">
+                            <a href="{{ url('/producers') }}" class="nav-link">
                                 <p>Manage Producers</p>
                             </a>
                         </li>
@@ -34,7 +34,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('admin') }}" class="nav-link">
+                            <a href="{{ url('/admin') }}" class="nav-link">
                                 <p>Manage Administrators</p>
                             </a>
                         </li>
