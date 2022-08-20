@@ -26,7 +26,7 @@
                             {{ Session::get('success') }}
                         </div>
                     @endif
-                    <form action="{{ url('update') }}" method="POST">
+                    <form action="{{ url('producers/update') }}" method="POST">
                         @csrf
                         <div class="md-3">
                             <label for='id' class='form-label'>ID</label>
@@ -36,6 +36,10 @@
                         <div class="md-3">
                             <label for='name' class='form-label'>Name</label>
                             <input type="text" name="name" class="form-control" value="{{ $data->producer_name }}">
+                        </div>
+                        <div class="md-3">
+                            <label for='name' class='form-label'>Image</label>
+                            <input type="file" name="image" class="form-control" value="{{ $data->producer_image }}">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                         <a href="{{ url('producers') }}" class="btn btn-success">Back</a>

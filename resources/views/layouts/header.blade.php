@@ -5,7 +5,8 @@
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="ion-navicon-round"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{ url('index') }}" class="nav-link">Home</a>
+            <a href="{{ url('/') }}" class="nav-link">Home</a>
+
         </li>
         <li class="nav-item d-none d-sm-inline-block">
             <a href="#" class="nav-link">Contact</a>
@@ -21,10 +22,10 @@
             </a>
             <div class="navbar-search-block">
                 <form class="form-control">
-                    <div class="input-group input-group-sm">
+                    <div class="input-group">
                         <input class="form-control form-control-navbar" name="query" type="search"
                             placeholder="Search" aria-label="Search">
-                        <div class="input-group-append">
+                        <div class="input-group">
                             <button class="btn btn-navbar" type="submit">
                                 <i class="ion-search"></i>
                             </button>
@@ -34,13 +35,33 @@
                         </div>
                     </div>
                 </form>
+
+            </div>
+
+
+        </li>
+        <li class="nav-item">
+            <div class="dropdown">
+                <button class="btn btn-secondary" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="true">
+                    {{ Auth::user()->name }}
+                </button>
+
+                {{-- <a class="dropdown-item">
+                        <form action="{{ 'logout' }}" method="post">
+                            @csrf
+                            <a type="submit"></a>
+                        </form>
+                    </a> --}}
+                <a href="" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <form class="" action="{{ url('logout') }}" method="post">
+                        @csrf
+                        <input class="" type="submit" value="Logout">
+                    </form>
+                </a>
+
             </div>
         </li>
-        <x-dropdown class="text-gray-500">
-            <x-slot name="trigger">
-                <button>{{ Auth::user()->name }}</button>
-            </x-slot>
-            <a href="{{ route('logout') }}">Logout</a>
-        </x-dropdown>
+
     </ul>
 </nav>

@@ -8,10 +8,10 @@ use App\Models\Producers;
 
 class ProducerController extends Controller
 {
-    public function getProducers()
+    public function get_producers()
     {
         $data = Producers::get();
-        return view('listproducers', [
+        return view('management.list_producers', [
             'data' => $data,
         ]);
     }
@@ -19,7 +19,7 @@ class ProducerController extends Controller
 
     public function add()
     {
-        return view('addProducer');
+        return view('management.add_producer');
     }
 
     public function save(Request $request)
@@ -37,6 +37,7 @@ class ProducerController extends Controller
         } else {
             $producer->producer_id = $request->id;
             $producer->producer_name = $request->name;
+            $producer->producer_image = $request->image;
             $producer->save();
 
             return redirect()->back()->with('success', 'Producer added successfully');
@@ -46,7 +47,7 @@ class ProducerController extends Controller
     {
 
         $data = Producers::where('producer_id', '=', $id)->first();
-        return view('editproducer', [
+        return view('management.edit_producer', [
             'data' => $data,
         ]);
     }
@@ -57,6 +58,7 @@ class ProducerController extends Controller
         $id = $request->id;
         Producers::where('producer_id', '=', $id)->update([
             'producer_name' => $request->name,
+            'producer_image' => $request->image
         ]);
         return redirect()->back()->with('success', 'Producer updated successfully');
     }

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LAPTOP MSI</title>
+    <title>LAPTOP HP</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/home1/style.css') }}">
@@ -73,6 +73,7 @@
             </div>
         </div>
     </div>
+
     <hr>
     <div class="container" style="height: 30px;">
         @include('home.layouts.navbar')
@@ -83,16 +84,18 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="https://static.techspot.com/articles-info/1862/images/F-9.jpg"
+                    <img class="d-block w-100"
+                        src="https://bizweb.dktcdn.net/100/409/321/files/laptop-hp-spectre.jpg?v=1617692492108"
                         alt="First slide" class="img-fluid">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100"
-                        src="https://phucanhcdn.com/media/lib/02-07-2022/laptop-msi-gaming-stealth-gs66-12ugs-227vn-ha2.jpg"
+                        src="https://laptophainam.com/wp-content/uploads/2021/12/laptop-cu-hp-elitebook-840-g3-7.jpg"
                         alt="Second slide" class="img-fluid">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://i.ytimg.com/vi/UyD9vA93P-w/maxresdefault.jpg"
+                    <img class="d-block w-100"
+                        src="https://cdn.tgdd.vn/Files/2021/09/14/1382693/conenmualaptophp_1280x720-800-resize.png"
                         alt="Third slide" class="img-fluid">
                 </div>
             </div>
@@ -117,11 +120,10 @@
                 <a href="inner-productpage.html" class="text-dark">
                     <div class="card">
                         <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/LARe4PhjNSgJMEqTDOKDIOLdu4E_ACQmeiHlQ3AW-dmzY6XL69ODSIzMacRqp9x703x4tAPJA1SlSMWN2KcwvRP6bZRgpQyS=w500-rw"
+                            src="https://lh3.googleusercontent.com/pNS0xg3s-4WyIJA8OFwJ-HTKW4kiE99okHdt2hv7uNeOpEutD8z4B_V8jfJOxTXJ4ipuJdsEtOR12wBuzq4=w500-rw"
                             alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text"><a href="inner-productpage.html" class="text-dark">Laptop MSI Katana
-                                    GF76 11UC 096VN </a></p>
+                            <p class="card-text">Laptop HP 340s G7 224L0PA (14" HD/Intel Core i3)</p>
                             <p class="card-cost">$1500</p>
                         </div>
                     </div>
@@ -131,10 +133,10 @@
                 <a href="inner-productpage.html" class="text-dark">
                     <div class="card">
                         <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/CBjCnqXoK4sOkZIRV3uB7M4eONzSZJF7Q0AzxiWqqIlLX0fh6qR2tEF5TixeafK2Z8xoD3UyeZodGn7m2vZAnyi9CfMMOs2I=w500-rw"
+                            src="https://lh3.googleusercontent.com/1T_GR9qGlU7v4_RA4gZIHiDg7c3pwXldLbJUZJRjgxzEuLOO-4mSM02A1anCTS3bxvH6CjK4c0_jQtlQDts=w500-rw"
                             alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Laptop MSI Thin GF65 10UE 286VN</p>
+                            <p class="card-text">Laptop HP Envy 13-ba1028TU 2K0B2PA</p>
                             <p class="card-cost">$1500</p>
                         </div>
                     </div>
@@ -144,10 +146,10 @@
                 <a href="inner-productpage.html" class="text-dark">
                     <div class="card">
                         <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/roiOsTiqv2elSw_ZsoBuuXzPwlrjXMCDbyfwUSkxrnDebUQ4l2aRhq41qaBPyiHnSiPXHMWYni0RnL7EdUp3xe8Ik_wk-ho=w500-rw"
+                            src="https://lh3.googleusercontent.com/_HFuKjRt5qovjNkA880a6i8bL0ytOY8PGq7sCKiPVw-les6kLK9KV918EnBsTD7P4t0qpMm455lI6puu1HLsZi521YCL1bicEg=w500-rw"
                             alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Laptop MSI Modern 15 A10M 667VN</p>
+                            <p class="card-text">Laptop HP 14s-fq1080AU 4K0Z7PA </p>
                             <p class="card-cost">$1500</p>
                         </div>
                     </div>
@@ -157,10 +159,10 @@
                 <a href="inner-productpage.html" class="text-dark">
                     <div class="card">
                         <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/wTh3PmARs_laU84NP1STw9IG8uiL68XzYopb4QA_ZeXmkrgv81vtN5XW5MQG1hvDtpjoGo0ag1f7l3t_UaAfqnvBK_Al5b7yEA=w500-rw"
+                            src="https://lh3.googleusercontent.com/IaenqFnWrJyXICaOqUPeswNvl1jXYhR5Aejs3Jwwzs2l0fLFksAFdYg5nPSGdY68z90o5wJJwyyo4lwHjCUQHgqWq61in98=w500-rw"
                             alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Laptop MSI Bravo 15 B5DD 264VN</p>
+                            <p class="card-text">Laptop HP VICTUS 16-d0204TX 4R0U5PA</p>
                             <p class="card-cost">$1500</p>
                         </div>
                     </div>
@@ -178,10 +180,10 @@
                 <a href="inner-productpage.html" class="text-dark">
                     <div class="card">
                         <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/nwfy6HMafryEkrxyp6tKXdyicj8aHrn6dK3IKWoJkJpBVFJqhp8UL3drx1FOxOItw2dbIZv2mU3SAvl8YZd3AunVDqdHgBg=w500-rw"
+                            src="https://lh3.googleusercontent.com/faxQ6ixPdQ9yP_my02fO5XXovk2HPhVRC_hSoCz4W5vVXwPO7W5Z47gOU39Gr8csbV-wfOUA2WJBsYyY8m9tSkdXpO71iLQ=w500-rw"
                             alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Laptop MSI Alpha 15 B5EEK 205VN</p>
+                            <p class="card-text">Laptop HP ProBook 450 G9 6M0Z5PA</p>
                             <p class="card-cost">$1500</p>
                         </div>
                     </div>
@@ -191,10 +193,10 @@
                 <a href="inner-productpage.html" class="text-dark">
                     <div class="card">
                         <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/JWq7Iiz0C1H8Re9XAz_O_tiWVWj5uPB1pOFJdND8RTDCrz1KzqGQj1E3kmzcGYpzS2BWfU3NOqaWj0i1bUrTF2SMmkDPoJI=w500-rw"
+                            src="https://lh3.googleusercontent.com/uC6sn_dwq7thX2Xg1fgZTnN7gA72dyJx9aSZTZ9Mld6c8wPOmMKrAwxre5_rU7GAXhp1k4LQaY9oFTiE5csQpNBsW500WF0e=w500-rw"
                             alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Laptop MSI Crosshair 15 B12UEZ 460VN </p>
+                            <p class="card-text">Laptop HP 15s-fq2660TU 6K793PA</p>
                             <p class="card-cost">$1500</p>
                         </div>
                     </div>
@@ -204,10 +206,10 @@
                 <a href="inner-productpage.html" class="text-dark">
                     <div class="card">
                         <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/-UmweR-8TD53iuXi4b1moaavCUpg9S3S-iW0Gteoq-EzOOotdDxuXoFdQ7O5_pWfZOgDu8uXnc75b_L9zXunXslSycc35B-SJA=w500-rw"
+                            src="https://lh3.googleusercontent.com/GT-gDqGBo0cIp1deTPf9OyLndTPgfqZM-cDqtUZvpZotbto5OAUAKoHL07olRc1DnDjInLjVk8HrrNTvrIrNb8SB3IE_W7_F=w500-rw"
                             alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Laptop MSI Raider GE66 12UGS 405VN</p>
+                            <p class="card-text">Laptop HP OMEN 16-b0177TX 5Z9Q8PA</p>
                             <p class="card-cost">$1500</p>
                         </div>
                     </div>
@@ -217,10 +219,10 @@
                 <a href="inner-productpage.html" class="text-dark">
                     <div class="card">
                         <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/gX9uhXTFL-XiYiW-l5DAz2tutiO9aGORtYuyQdYDBNXskQuy0ZyWlGCUFqCVKyK4QchMQaS3048CDQN58hB0QJsxLOq3E1Z9=w500-rw"
+                            src="https://lh3.googleusercontent.com/XG0pDK6bLDAn9h-lKsrT0gOh_VmjSh14Dwk6gFCFIhZ74JNqU7Aab70w2QaFbO7voQgNi4Do2CSIl0LqRWPvvBlaqOxS2Z8=w500-rw"
                             alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Laptop MSI GP66 Leopard 11UE 643VN </p>
+                            <p class="card-text">Laptop HP ProBook 440 G8 614F2PA</p>
                             <p class="card-cost">$1500</p>
                         </div>
                     </div>
@@ -241,10 +243,10 @@
                 <a href="inner-productpage.html" class="text-dark">
                     <div class="card">
                         <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/5uVk9c_m5_fYWC5aTpgBTBJF7hS6bfmR63UXcCr7mSuIkeWqS8Gz8rYD3aSk9xUZsNMvLdQfWgcqUTlaCfo-2-jF8NkZgMRo=w500-rw"
+                            src="https://lh3.googleusercontent.com/J_rIDWU9QX9TT4VxwQz7EhtgVv23VYp340pdzKKDI-QwKIbS5AyJFcSIY9JlCjJzzD_IvLHhXC0mU94STb7BhJlT2Fttyaym=w500-rw"
                             alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Laptop MSI Prestige 14 A11SC 203VN</p>
+                            <p class="card-text">Laptop HP 240 G8 3D0E8PA (14" /Intel Core i7)</p>
                             <p class="card-cost">$1500</p>
                         </div>
                     </div>
@@ -254,10 +256,10 @@
                 <a href="inner-productpage.html" class="text-dark">
                     <div class="card">
                         <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/2WejeGNyIMZmtds0uPLgNDum5yPY-QbhO-g7STxG4gRPJQ4mHt0FgTBnGoqfc2q4TYAqp0B-6hsldTqx1jC3wecQ0W6okHzq=w500-rw"
+                            src="https://lh3.googleusercontent.com/v39eTiCN0BBrLd8vOOcIXx8RLoRMtiPWVqjnm7AfAzbJGQwcGG_AnVJqLpjeN4-5gMYZ5QWpU5pQOWz_TokT0iZJjUHv9OMS=w500-rw"
                             alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Laptop MSI Prestige 15 A11SC-037VN 037VN</p>
+                            <p class="card-text">Laptop HP ProBook 450 G8 614K4PA</p>
                             <p class="card-cost">$1500</p>
                         </div>
                     </div>
@@ -267,10 +269,10 @@
                 <a href="inner-productpage.html" class="text-dark">
                     <div class="card">
                         <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/zv-LptUN4QTrDqaj4reDDNvQzB3vVeYcRWsfASlv2dOf0knKYbubS-JX6L4pxsPoJTL1DngCHi5zJCnauYHgO-r4MlUS1c4=w500-rw"
+                            src="https://lh3.googleusercontent.com/dXUwHKzuUXLLmjPw2ql_tyj7jY52Two9LRp2mjLzQ6jm9l2s8zdhpjgzfh4gquDckVyB7ffVAD5h19IQp1jfzfGI2p6tvWLV=w500-rw"
                             alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Laptop MSI GF63 Thin 11SC 664VN</p>
+                            <p class="card-text">Laptop HP ProBook 440 G9 6M0X8PA </p>
                             <p class="card-cost">$1500</p>
                         </div>
                     </div>
@@ -280,10 +282,10 @@
                 <a href="inner-productpage.html" class="text-dark">
                     <div class="card">
                         <img class="card-img-top img-fluid"
-                            src="https://lh3.googleusercontent.com/bAL9hw6lSz45Sh2g_tsVA5wp7TVgmI-T94Q_rfApjwD_LJYZmZ8Rz2QX68LpdTlT4DAIzffzNxWqmxxK9um_RZYhL0HNRlt8=w500-rw"
+                            src="https://lh3.googleusercontent.com/D2e5B-fKGzOiHYuYsShiGdNL8kaq0fNCYes9LItvZuRjZ9XapPvvr-K4zocS5mkrPbHgO_OkMJ5j75M4_2kZj5UWq1lA_1Q=w500-rw"
                             alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Laptop MSI GF63 Thin 11SC 662VN </p>
+                            <p class="card-text">Laptop HP Spectre X360 13-aw2101TU</p>
                             <p class="card-cost">$1500</p>
                         </div>
                     </div>
@@ -343,7 +345,6 @@
             </span>
         </div>
     </footer>
-
 </body>
 
 

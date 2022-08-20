@@ -13,7 +13,7 @@ class ProductController extends Controller
     public function index()
     {
         $data = Product::paginate(15);
-        return view('list', [
+        return view('management.list', [
             'data' => $data,
             'data' => DB::table('products')->paginate(15)
         ]);
@@ -23,7 +23,7 @@ class ProductController extends Controller
     {
         $producers = Producers::get();
         $categories = Categories::get();
-        return view('add', [
+        return view('management.add', [
             'producers' => $producers,
             'categories' => $categories
         ]);
@@ -58,7 +58,7 @@ class ProductController extends Controller
         $data = Product::where('product_id', '=', $id)->first();
         $producers = Producers::get();
         $categories = Categories::get();
-        return view('edit', [
+        return view('management.edit', [
             'data' => $data,
             'producers' => $producers,
             'categories' => $categories
@@ -94,7 +94,7 @@ class ProductController extends Controller
             $search_text = $_GET['query'];
             $product_title = DB::table('products')->where('product_name', 'LIKE', '%' . $search_text . '%')->paginate(5);
 
-            return view('list', [
+            return view('management.list', [
                 'data' => $product_title,
             ]);
         }

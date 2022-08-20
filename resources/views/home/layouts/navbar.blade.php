@@ -15,23 +15,22 @@
                 </div>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="{{ url('product/msi') }}"> MSI Laptop <span
-                        class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{ url('product/msi') }}">Laptop MSI<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="{{ url('product/hp') }}"> HP Laptop </a>
+                <a class="nav-link" href="{{ url('product/hp') }}"> laptop HP </a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="{{ url('product/asus') }}">ASUS Laptop</a>
+                <a class="nav-link" href="{{ url('product/asus') }}"> Laptop Asus</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="{{ url('product/lenovo') }}">LENOVO Laptop</a>
+                <a class="nav-link" href="{{ url('product/lenovo') }}">Laptop Lenovo </a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="{{ url('product/acer') }}">ACER Laptop</a>
+                <a class="nav-link" href="{{ url('product/acer') }}">Laptop ACER </a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#{{ url('product/dell') }}">DELL Laptop</a>
+                <a class="nav-link" href="#{{ url('product/dell') }}"> Laptop dell</a>
             </li>
         </ul>
     </div>

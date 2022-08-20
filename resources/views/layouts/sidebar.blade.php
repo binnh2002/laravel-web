@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="{{ url('/dashboard') }}" class="brand-link">
         @include('components.application-logo')
         <span class="brand-text font-weight-light">Shop admin</span>
     </a>
@@ -29,15 +29,16 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="{{ url('/categories') }}" class="nav-link">
+                                <p>Manage Categories</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="{{ url('/users') }}" class="nav-link">
                                 <p>Manage Customer accounts</p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="{{ url('/admin') }}" class="nav-link">
-                                <p>Manage Administrators</p>
-                            </a>
-                        </li>
+
 
                     </ul>
                 </li>

@@ -23,14 +23,14 @@
         <div class="container" style="margin-top: 50px">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Producer list</h2>
+                    <h2>Categories list</h2>
                     @if (Session::has('success'))
                         <div class="alert alert-success" role="alert">
                             {{ Session::get('success') }}
                         </div>
                     @endif
                     <div style="float: right;">
-                        <a href="{{ url('producers/add') }}" class="btn btn-outline-success">Add new</a>
+                        <a href="{{ url('categories/add') }}" class="btn btn-outline-success">Add new</a>
                     </div>
                     <table class="table table-striped">
                         <thead class='thead-dark'>
@@ -43,12 +43,12 @@
                         <tbody>
                             @foreach ($data as $row)
                                 <tr>
-                                    <td> {{ $row->producer_id }} </td>
-                                    <td> {{ $row->producer_name }} </td>
+                                    <td> {{ $row->cat_id }} </td>
+                                    <td> {{ $row->cat_title }} </td>
                                     <td>
-                                        <a href="{{ url('producers/edit/' . $row->producer_id) }}"
+                                        <a href="{{ url('categories/edit/' . $row->cat_id) }}"
                                             class="btn btn-primary">Edit</a>
-                                        <a href="{{ url('producers/delete/' . $row->producer_id) }}" class="btn btn-danger"
+                                        <a href="{{ url('categories/delete/' . $row->cat_id) }}" class="btn btn-danger"
                                             onclick="return confirm('Are you sure you want to delete this')">Delete</a>
                                     </td>
                                 </tr>
