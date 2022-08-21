@@ -67,9 +67,9 @@
                         </tbody>
                     </table>
                     <nav>
-                        <ul class="pagination">
+                        {{-- <ul class="pagination">
                             {{ $data->links() }}
-                        </ul>
+                        </ul> --}}
                     </nav>
                 </div>
             </div>

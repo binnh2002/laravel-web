@@ -23,7 +23,7 @@ class AdminMiddleware
             {
                 return $next($request);
             } else {
-                return redirect('/index');
+                return redirect('/');
             }
         } else {
 

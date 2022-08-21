@@ -45,7 +45,7 @@
                             <label for='name' class='form-label'>Image</label>
                             <input type="file" name="image" class="form-control" placeholder="Input image">
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Add</button>
                         <a href="{{ url('producers') }}" class="btn btn-success">Back</a>
                     </form>
                 </div>

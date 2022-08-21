@@ -55,10 +55,13 @@
                             <button class="inline-flex justify-center w-full border border-0 bg-white"
                                 type="submit">Logout</button>
                         </form>
+                        <a href="#" class="dropdown-item">
+                            <a class="inline-flex justify-center w-full border border-0 bg-white"
+                                href="{{ url('/admin/profile/edit/' . Auth::user()->id) }}">Profile</a>
+                        </a>
                     </a>
 
                 </div>
-
             </div>
         </li>
 

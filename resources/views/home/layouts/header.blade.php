@@ -37,17 +37,39 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 mt-2" id="icons">
-            <a href="{{ url('login') }}">
-                <div style="cursor: pointer;" class="circle float-right" data-toggle="modal" data-target="#loginModal"
-                    data-toggle="tooltip" data-placement="top" title="LOGIN & SIGNUP"><i
-                        class="fas fa-user text-primary"></i></div>
-            </a>
+        <div class="col-md-3 mt-2">
 
             <a href="#">
                 <div class="circle float-right mr-2"><i class="fas fa-shopping-cart text-primary"></i><sup><span
                             class="badge badge-danger" style="width: 23px;">0</span></sup></div>
             </a>
+
+            @if (Auth::check())
+                <div class="dropdown">
+                    <button class="btn btn-secondary inline-flex justify-center" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ Auth::user()->name }}
+                    </button>
+
+                    <div href="#" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a href="#" class="dropdown-item">
+                            <form action="{{ url('logout') }}" method="post">
+                                @csrf
+                                <button class="inline-flex justify-center w-full border border-0 bg-white"
+                                    type="submit">Logout</button>
+                            </form>
+                            <a href="#" class="dropdown-item">
+                                <a class="inline-flex justify-center w-full border border-0 bg-white"
+                                    href="{{ url('/user/profile/edit/' . Auth::user()->id) }}">Profile</a>
+                            </a>
+                        </a>
+                    </div>
+                </div>
+            @else
+                <a class="nav-link" id="tab-login" data-mdb-toggle="pill" href="{{ url('/login') }}" role="tab"
+                    aria-controls="pills-login" aria-selected="true">Login</a>
+                <a class="nav-link" id="tab-register" href="{{ url('/register') }}">Register</a>
+            @endif
         </div>
     </div>
 </div>

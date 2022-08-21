@@ -27,8 +27,9 @@
     <hr>
     {{-- carousel --}}
     <div class="container">
-        @include('management.edit_user_profile')
+
     </div>
+    <a>{{ $data->producer_name }}</a>
     <br>
     <br>
     {{-- footer --}}

@@ -12,11 +12,8 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $data = Product::paginate(15);
-        return view('management.list', [
-            'data' => $data,
-            'data' => DB::table('products')->paginate(15)
-        ]);
+        $data = Product::get();
+        return view('management.list', compact('data'));
     }
 
     public function add()
@@ -88,17 +85,7 @@ class ProductController extends Controller
         return redirect()->back()->with('success', 'Product deleted successfully');
     }
 
-    public function search(Request $request)
-    {
-        if (isset($_GET['query'])) {
-            $search_text = $_GET['query'];
-            $product_title = DB::table('products')->where('product_name', 'LIKE', '%' . $search_text . '%')->paginate(5);
 
-            return view('management.list', [
-                'data' => $product_title,
-            ]);
-        }
-    }
 
     public function loadProduct()
     {
@@ -107,4 +94,13 @@ class ProductController extends Controller
             'data' => $data
         ]);
     }
+
+
+    // public function view_product($id)
+    // {
+
+    //     $data = Product::where('product_id', '=', $id)->first();
+
+    //     return view('home.viewproduct.viewproduct', compact('data'));
+    // }
 }

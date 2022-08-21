@@ -11,9 +11,7 @@ class ProducerController extends Controller
     public function get_producers()
     {
         $data = Producers::get();
-        return view('management.list_producers', [
-            'data' => $data,
-        ]);
+        return view('management.list_producers', compact('data'));
     }
 
 
@@ -26,7 +24,7 @@ class ProducerController extends Controller
     {
         $producer = new Producers();
 
-        // get request producer from addProducer
+        // get request from view add_producer
 
         $producer->producer_id = $request->id;
         //check exists producer in database

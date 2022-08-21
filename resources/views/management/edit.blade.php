@@ -73,7 +73,7 @@
                                 @endforeach
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
                         <a href="{{ url('list') }}" class="btn btn-success">Back</a>
                     </form>
                 </div>
