@@ -42,23 +42,22 @@
         </li>
         <li class="nav-item">
             <div class="dropdown">
-                <button class="btn btn-secondary" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="true">
+                <button
+                    class="btn btn-secondary inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white"
+                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {{ Auth::user()->name }}
                 </button>
 
-                {{-- <a class="dropdown-item">
-                        <form action="{{ 'logout' }}" method="post">
+                <div href="#" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a href="#" class="dropdown-item">
+                        <form action="{{ url('logout') }}" method="post">
                             @csrf
-                            <a type="submit"></a>
+                            <button class="inline-flex justify-center w-full border border-0 bg-white"
+                                type="submit">Logout</button>
                         </form>
-                    </a> --}}
-                <a href="" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <form class="" action="{{ url('logout') }}" method="post">
-                        @csrf
-                        <input class="" type="submit" value="Logout">
-                    </form>
-                </a>
+                    </a>
+
+                </div>
 
             </div>
         </li>
