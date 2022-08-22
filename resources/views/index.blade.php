@@ -40,9 +40,9 @@
     <br>
     <br>
 
-    <div class="container cardItem" id="newarrive">
+    {{-- <div class="container cardItem" id="newarrive">
         @include('home.layouts.newarrive')
-    </div>
+    </div> --}}
 
 
     <br>

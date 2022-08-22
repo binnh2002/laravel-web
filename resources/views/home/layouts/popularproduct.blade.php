@@ -6,12 +6,11 @@
         <div class="col-md-3">
             <a href="inner-productpage.html" class="text-dark">
                 <div class="card">
-                    <img class="card-img-top img-fluid"
-                        src="https://lh3.googleusercontent.com/LARe4PhjNSgJMEqTDOKDIOLdu4E_ACQmeiHlQ3AW-dmzY6XL69ODSIzMacRqp9x703x4tAPJA1SlSMWN2KcwvRP6bZRgpQyS=w500-rw"
+                    <img class="card-img-top img-fluid" src="{{ asset('img/' . $row->product_image) }}"
                         alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text"> {{ $row->product_title }}</p>
-                        <p class="card-cost">{{ $row->product_price }}</p>
+                        <p class="card-cost">{{ $row->product_price }} $</p>
                     </div>
                 </div>
             </a>

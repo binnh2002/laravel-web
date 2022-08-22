@@ -56,7 +56,7 @@ class UserController extends Controller
     }
     public function edit_user_profile($id)
     {
-        $data = User::where('id', '=', $id)->get();
+        $data = User::where('id', '=', $id)->first();
 
         return view('Users.Customers.edit_profile', [
             'data' => $data,
@@ -67,7 +67,6 @@ class UserController extends Controller
         $id = $request->id;
         User::where('id', '=', $id)->update([
             'name' => $request->name,
-            'email' => $request->email
         ]);
 
         return redirect()->back()->with('success', 'information updated successfully');
