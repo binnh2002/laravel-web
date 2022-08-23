@@ -3,7 +3,7 @@
 <div class="row">
     @foreach ($data as $row)
         <div class="col-md-3">
-            <a href="jkljkljsda"class="text-dark">
+            <a href="{{url('view/product/'. $row->product_id)}}"class="text-dark">
                 <div class="card">
                     <img class="card-img-top img-fluid"
                         src="https://lh3.googleusercontent.com/wQP8wlXt_Sd0UJzgGDj01q7-aqtTFIFph65HwEMDNq2FUmic1Q3dvA12KXL4Jn2HC88VJByKpZMw-Y_tG-IWTkm-30Rqg_Co=w500-rw"

@@ -85,4 +85,4 @@ Route::post('/user/profile/update', [UserController::class, 'update_user_profile
 Route::get('product/msi', function () {
     return view('home.listproducts.msi');
 });
-// Route::get('viewproduct/product/{id}', ProductController::class, 'view_product');
+Route::get('product/{id}', [ProductController::class,'view_product']);

@@ -4,7 +4,7 @@
 
     @foreach ($data as $row)
         <div class="col-md-3">
-            <a href="inner-productpage.html" class="text-dark">
+            <a href="{{url('product/'. $row->product_id)}}" class="text-dark">
                 <div class="card">
                     <img class="card-img-top img-fluid" src="{{ asset('img/' . $row->product_image) }}"
                         alt="Card image cap">

@@ -37,7 +37,6 @@
 
             <div class="col-md-7">
                 <h5>{{$data->product_title}}</h5>
-                <p class="text-muted">{{$data->product_cat}}</p>
                 <h5 class="pt-4">${{$data->product_price}}</h5>
                 <p class="description text-muted">{{$data->product_details}}</p>
                 <hr>
@@ -94,7 +93,7 @@
                 <div class="tab-content w-100 pt-5" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <h5>Product Description</h5>
-                        <p class="text-muted">T-SHIRTS</p>
+                        <p class="text-muted">{{$data->product_title}}</p>
                         <div class="ratings">
                             <i class="fas fa-star text-primary"></i>
                             <i class="fas fa-star text-primary"></i>
@@ -103,19 +102,8 @@
                             <i class="far fa-star text-primary"></i>
 
                         </div>
-                        <h5 class="pt-4">$179.00</h5>
-                        <p class="description text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                            anim id est laborum.
-
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h5 class="pt-4">${{$data->product_price}}</h5>
+                        <p class="description text-muted">{{$data->product_details}}</p>
 
                     </div>
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">

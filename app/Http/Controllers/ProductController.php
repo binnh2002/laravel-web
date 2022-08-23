@@ -9,6 +9,7 @@ use App\Models\Categories;
 use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
+
 {
     public function index()
     {
@@ -30,6 +31,8 @@ class ProductController extends Controller
     {
 
         $product = new Product();
+                // get request from view add_product
+
         $product->product_id = $request->id;
         $id = $request->id;
         $check = Product::where('product_id', '=', $id)->first();
@@ -96,11 +99,10 @@ class ProductController extends Controller
     }
 
 
-    // public function view_product($id)
-    // {
+    public function view_product($id)
+    {
+        $data = Product::where('product_id', '=', $id)->first();
 
-    //     $data = Product::where('product_id', '=', $id)->first();
-
-    //     return view('home.viewproduct.viewproduct', compact('data'));
-    // }
+        return view('home.viewproduct.pdp', compact('data'));
+    }
 }
